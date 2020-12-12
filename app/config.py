@@ -63,7 +63,7 @@ except (KeyError, ValueError):
 
 
 
-host = "cdgex.herokuapp.com"
+host = "localhost"
 debug = bool(os.environ.get("DEBUG"))
 chat_ids = []
 alias_ids = []
