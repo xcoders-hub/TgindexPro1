@@ -13,8 +13,8 @@ if not 1 <= port <= 65535:
     sys.exit(1)
 
 try:
-    api_id = int(os.environ["API_ID"])
-    api_hash = os.environ["API_HASH"]
+    api_id = 1064864
+    api_hash = "5f3eeab0e6108731551e6a93598b654c"
 except (KeyError, ValueError):
     traceback.print_exc()
     print("\n\nPlease set the API_ID and API_HASH environment variables correctly")
@@ -27,7 +27,7 @@ try:
     # index_settings = json.loads(index_settings_str)
 
     index_settings = {
-      "index_all": False,
+      "index_all": True,
       "index_private":True,
       "index_group": True,
       "index_channel": True,
@@ -48,7 +48,7 @@ except:
     sys.exit(1)
 
 try:
-    session_string = os.environ["SESSION_STRING"]
+    session_string = ""
 except (KeyError, ValueError):
     traceback.print_exc()
     print("\n\nPlease set the SESSION_STRING environment variable correctly")
@@ -63,7 +63,7 @@ except (KeyError, ValueError):
 
 
 
-host = os.environ.get("HOST", "0.0.0.0")
+host = "cdgex.herokuapp.com"
 debug = bool(os.environ.get("DEBUG"))
 chat_ids = []
 alias_ids = []
