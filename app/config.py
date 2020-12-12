@@ -63,7 +63,7 @@ except (KeyError, ValueError):
 
 
 
-host = "localhost"
+host = "31.171.244.203"
 debug = bool(os.environ.get("DEBUG"))
 chat_ids = []
 alias_ids = []
