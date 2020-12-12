@@ -32,7 +32,7 @@ try:
       "index_group": True,
       "index_channel": True,
       "exclude_chats": [],
-      "include_chats": [int(os.environ["INDEXING_CHAT"])],#my index chat
+      "include_chats": "4A5pMG3S58mBQL",#my index chat
       "otg": {
           "enable": True,
           "include_private": True,
